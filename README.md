@@ -8,6 +8,19 @@ To analyze insurance claims data and develop a risk-based pricing framework usin
 - R
 - Power BI
 
+## Dataset
+
+The dataset for this project will consist of insurance policyholder and claims information, including variables such as:
+
+- Age
+- Gender
+- Policy Type
+- Premium Amount
+- Claim Amount
+- Claim Status
+
+The data will be used to evaluate claim frequency, claim severity, and policyholder risk characteristics.
+
 ## Current Status
 Project Progress: 10% Complete
 
@@ -36,3 +49,12 @@ insurance-claims-risk-analysis/
 
 ## Project Goal
 The objective is to identify key risk drivers affecting insurance claims and develop actuarially justified pricing recommendations using historical claims data.
+
+
+## Expected Outcomes
+
+- Identify high-risk policyholder segments.
+- Analyze claim frequency and severity patterns.
+- Develop a risk-based pricing framework.
+- Create interactive dashboards for portfolio monitoring.
+- Generate underwriting and pricing recommendations.
