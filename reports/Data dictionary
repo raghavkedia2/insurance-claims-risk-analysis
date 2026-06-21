@@ -1,0 +1,13 @@
+| Variable                    | Description               |
+| --------------------------- | ------------------------- |
+| age                         | Age of policyholder       |
+| months_as_customer          | Customer tenure           |
+| policy_annual_premium       | Annual premium paid       |
+| policy_deductable           | Deductible amount         |
+| incident_severity           | Severity of accident      |
+| number_of_vehicles_involved | Vehicles involved         |
+| total_claim_amount          | Total claim value         |
+| injury_claim                | Injury component          |
+| property_claim              | Property damage component |
+| vehicle_claim               | Vehicle damage component  |
+| fraud_reported              | Fraud indicator           |
