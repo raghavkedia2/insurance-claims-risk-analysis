@@ -1,0 +1,4 @@
+> insurance_claims <- read_excel("C:/Users/user1/Desktop/All Folders/Actuarial Project/self made analysis project/insurance claims.xlsx")
+> summary(insurance_claims$total_claim_amount)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    100   41813   58055   52762   70593  114920 
