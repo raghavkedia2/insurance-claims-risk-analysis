@@ -50,6 +50,7 @@ Correlation between annual premium and total claim amount:
 There was virtually no linear relationship between annual premiums and claim amounts,
 suggesting that claim costs may be influenced by factors beyond premium levels alone.
 
+
 ## Claim Component Analysis
 
 | Claim Component | Average Amount |
@@ -62,3 +63,18 @@ suggesting that claim costs may be influenced by factors beyond premium levels a
 
 Vehicle claims represent the largest component of total losses, averaging 37,929 per claim.
 Injury and property claims contribute significantly less, averaging approximately 7,400 each.
+
+
+## Fraud Analysis
+
+| Fraud Reported | Average Claim Amount | Count |
+|---------------|--------------------|------|
+| N | 50,289 | 753 |
+| Y | 60,302 | 247 |
+
+### Key Observation
+
+Fraudulent claims accounted for 24.7% of all claims and exhibited 
+average claim amounts approximately 20% higher than non-fraudulent claims.
+
+
