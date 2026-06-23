@@ -1,4 +1,70 @@
+#Day 1
+
 > insurance_claims <- read_excel("C:/Users/user1/Desktop/All Folders/Actuarial Project/self made analysis project/insurance claims.xlsx")
 > summary(insurance_claims$total_claim_amount)
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     100   41813   58055   52762   70593  114920 
+
+#Day 2
+
+> insurance_claims$age_group = cut(
++   insurance_claims$age,
++   breaks = c(18,25,35,45,55,65),
++   labels = c("15-25","25-35","35-45","45-55","55+")
++ )
+> table(insurance_claims$age_group)
+
+15-25 25-35 35-45 45-55   55+ 
+   40   352   385   159    64 
+
+> library(dplyr)
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+> insurance_claims %>%
++   group_by(age_group) %>%
++   summarise(
++     avg_claim = mean(total_claim_amount, na.rm = TRUE),
++     count = n()
++   )
+# A tibble: 5 × 3
+  age_group avg_claim count
+  <fct>         <dbl> <int>
+1 15-25        53873     40
+2 25-35        50361.   352
+3 35-45        52996.   385
+4 45-55        54721.   159
+5 55+          58997.    64
+> insurance_claims %>%
++   group_by(incident_severity) %>%
++   summarise(
++     avg_claim = mean(total_claim_amount),
++     count = n()
++   )
+# A tibble: 4 × 3
+  incident_severity avg_claim count
+  <chr>                 <dbl> <int>
+1 Major Damage         64067.   276
+2 Minor Damage         48643.   354
+3 Total Loss           62081.   280
+4 Trivial Damage        5302.    90
+> cor(insurance_claims$policy_annual_premium,
++     insurance_claims$total_claim_amount)
+[1] 0.009093729
+> insurance_claims %>%
++   summarise(
++     avg_injury = mean(injury_claim),
++     avg_property = mean(property_claim),
++     avg_vehicle = mean(vehicle_claim)
++   )
+# A tibble: 1 × 3
+  avg_injury avg_property avg_vehicle
+       <dbl>        <dbl>       <dbl>
+1      7433.        7400.      37929.
