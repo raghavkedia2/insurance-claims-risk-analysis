@@ -90,4 +90,4 @@ Vehicle claims represented the largest component of total losses, averaging appr
 
 ### Claim Amount by Incident Severity
 
-![Severity vs Claim Amount](images/severity_vs_claim_amount.JPG)
+![Severity vs Claim Amount](images/severity vs claim amount.JPG)
