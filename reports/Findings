@@ -3,3 +3,46 @@
 Average claim amount was approximately 52,762.
 Claim amounts ranged from 100 to 114,920,
 indicating substantial variation in claim severity.
+
+#Day 3
+
+## Age Group Analysis
+
+Average claim amounts varied across age groups.
+
+| Age Group | Average Claim Amount |
+| --------- | -------------------- |
+| 15-25     | 53,873               |
+| 25-35     | 50,361               |
+| 35-45     | 52,996               |
+| 45-55     | 54,721               |
+| 55+       | 58,997               |
+
+### Key Observation
+
+Policyholders aged 55+ exhibited the highest average claim amount, while the 25-35 age group showed the lowest average claim cost.
+
+
+## Incident Severity Analysis
+
+| Incident Severity | Average Claim Amount |
+| ----------------- | -------------------- |
+| Major Damage      | 64,067               |
+| Total Loss        | 62,081               |
+| Minor Damage      | 48,643               |
+| Trivial Damage    | 5,302                |
+
+### Key Observation
+
+Incident severity was a major driver of claim costs. Major Damage and Total Loss incidents generated substantially higher claims than Minor or Trivial Damage incidents.
+
+
+## Premium vs Claim Amount
+
+Correlation between annual premium and total claim amount:
+
+0.009
+
+### Key Observation
+
+There was virtually no linear relationship between annual premiums and claim amounts, suggesting that claim costs may be influenced by factors beyond premium levels alone.
