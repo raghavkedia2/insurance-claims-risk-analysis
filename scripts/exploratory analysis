@@ -84,3 +84,17 @@ incident_severity avg_claim count
 1 N                 50289.   753
 2 Y                 60302.   247
 
+> insurance_claims %>%
++   count(incident_severity, fraud_reported)
+# A tibble: 8 × 3
+  incident_severity fraud_reported     n
+  <chr>             <chr>          <int>
+1 Major Damage      N                109
+2 Major Damage      Y                167
+3 Minor Damage      N                316
+4 Minor Damage      Y                 38
+5 Total Loss        N                244
+6 Total Loss        Y                 36
+7 Trivial Damage    N                 84
+8 Trivial Damage    Y                  6
+
