@@ -28,6 +28,7 @@ The following objects are masked from ‘package:stats’:
 The following objects are masked from ‘package:base’:
 
     intersect, setdiff, setequal, union
+
 > insurance_claims %>%
 +   group_by(age_group) %>%
 +   summarise(
@@ -42,6 +43,7 @@ The following objects are masked from ‘package:base’:
 3 35-45        52996.   385
 4 45-55        54721.   159
 5 55+          58997.    64
+
 > insurance_claims %>%
 +   group_by(incident_severity) %>%
 +   summarise(
@@ -49,7 +51,7 @@ The following objects are masked from ‘package:base’:
 +     count = n()
 +   )
 # A tibble: 4 × 3
-  incident_severity avg_claim count
+incident_severity avg_claim count
   <chr>                 <dbl> <int>
 1 Major Damage         64067.   276
 2 Minor Damage         48643.   354
@@ -58,6 +60,7 @@ The following objects are masked from ‘package:base’:
 > cor(insurance_claims$policy_annual_premium,
 +     insurance_claims$total_claim_amount)
 [1] 0.009093729
+
 > insurance_claims %>%
 +   summarise(
 +     avg_injury = mean(injury_claim),
@@ -68,3 +71,16 @@ The following objects are masked from ‘package:base’:
   avg_injury avg_property avg_vehicle
        <dbl>        <dbl>       <dbl>
 1      7433.        7400.      37929.
+
+> insurance_claims %>%
++   group_by(fraud_reported) %>%
++   summarise(
++     avg_claim = mean(total_claim_amount),
++     count = n()
++   )
+# A tibble: 2 × 3
+  fraud_reported avg_claim count
+  <chr>              <dbl> <int>
+1 N                 50289.   753
+2 Y                 60302.   247
+
