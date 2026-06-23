@@ -98,3 +98,12 @@ incident_severity avg_claim count
 7 Trivial Damage    N                 84
 8 Trivial Damage    Y                  6
 
+> library(ggplot2)
+Want to understand how all the pieces fit together? Read R for Data
+Science: https://r4ds.hadley.nz/
+> 
+> ggplot(insurance_claims,
++        aes(x = incident_severity,
++            y = total_claim_amount)) +
++   geom_boxplot()
+
