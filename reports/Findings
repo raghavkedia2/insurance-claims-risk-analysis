@@ -78,3 +78,19 @@ Fraudulent claims accounted for 24.7% of all claims and exhibited
 average claim amounts approximately 20% higher than non-fraudulent claims.
 
 
+## Fraud by Incident Severity
+
+Fraud rates varied significantly across severity categories.
+
+| Severity | Fraud Rate |
+|----------|------------|
+| Major Damage | 60.5% |
+| Minor Damage | 10.7% |
+| Total Loss | 12.9% |
+| Trivial Damage | 6.7% |
+
+### Key Observation
+
+Major Damage incidents exhibited an exceptionally high fraud rate of 60.5%, substantially exceeding all other severity categories. 
+This suggests that severity may be an important indicator for fraud risk assessment.
+
