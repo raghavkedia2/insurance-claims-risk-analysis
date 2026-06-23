@@ -10,24 +10,36 @@ To analyze insurance claims data and develop a risk-based pricing framework usin
 
 ## Dataset
 
-The dataset for this project will consist of insurance policyholder and claims information, including variables such as:
+Source: Insurance Fraud Detection Dataset (Kaggle)
 
-- Age
-- Gender
-- Policy Type
-- Premium Amount
-- Claim Amount
-- Claim Status
+Dataset Size:
 
-The data will be used to evaluate claim frequency, claim severity, and policyholder risk characteristics.
+* 1,000 insurance claim records
+* 39 variables
+
+Key Variables:
+
+* Age
+* Policy Annual Premium
+* Policy Deductible
+* Incident Severity
+* Total Claim Amount
+* Injury Claim
+* Property Claim
+* Vehicle Claim
+* Fraud Reported
+
+The dataset contains policyholder, vehicle, incident, and claims information that will be used to evaluate claim severity, fraud patterns, and insurance risk drivers.
+
 
 ## Current Status
-Project Progress: 10% Complete
+
+Project Progress: 30% Complete
 
 - [x] Repository Setup
-- [ ] Dataset Collection
-- [ ] Data Cleaning
-- [ ] Exploratory Data Analysis
+- [x] Dataset Collection
+- [x] Data Understanding
+- [x] Exploratory Data Analysis
 - [ ] Claim Frequency Analysis
 - [ ] Claim Severity Analysis
 - [ ] Risk-Based Pricing Framework
@@ -58,3 +70,24 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 - Develop a risk-based pricing framework.
 - Create interactive dashboards for portfolio monitoring.
 - Generate underwriting and pricing recommendations.
+
+
+## Key Findings So Far
+
+### Age Group Analysis
+Average claim amounts were highest among policyholders aged 55+, indicating potential differences in claim severity across age groups.
+
+### Incident Severity Analysis
+Major Damage and Total Loss incidents generated the highest average claim amounts, exceeding 62,000 on average.
+
+### Fraud Analysis
+Fraudulent claims exhibited average claim costs approximately 20% higher than non-fraudulent claims.
+
+### Claim Component Analysis
+Vehicle claims represented the largest component of total losses, averaging approximately 37,929 per claim.
+
+## Sample Visualization
+
+### Claim Amount by Incident Severity
+
+![Severity vs Claim Amount](images/severity_vs_claim_amount)
