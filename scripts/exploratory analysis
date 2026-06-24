@@ -107,3 +107,26 @@ Science: https://r4ds.hadley.nz/
 +            y = total_claim_amount)) +
 +   geom_boxplot()
 
+
+#Day 3
+
+> insurance_claims %>%
++   group_by(incident_severity, fraud_reported) %>%
++   summarise(
++     avg_claim = mean(total_claim_amount),
++     count = n()
++   )
+`summarise()` has grouped output by 'incident_severity'. You can override using
+the `.groups` argument.
+# A tibble: 8 × 4
+# Groups:   incident_severity [4]
+  incident_severity fraud_reported avg_claim count
+  <chr>             <chr>              <dbl> <int>
+1 Major Damage      N                 63993.   109
+2 Major Damage      Y                 64116.   167
+3 Minor Damage      N                 48633.   316
+4 Minor Damage      Y                 48726.    38
+5 Total Loss        N                 61792.   244
+6 Total Loss        Y                 64041.    36
+7 Trivial Damage    N                  5320.    84
+8 Trivial Damage    Y                  5038.     6
