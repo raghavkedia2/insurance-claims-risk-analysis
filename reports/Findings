@@ -107,3 +107,20 @@ similar between fraudulent and non-fraudulent claims within each severity catego
 The higher average cost of fraudulent claims appears to be largely driven by the concentration of fraud
 within Major Damage incidents rather than fraud itself increasing claim amounts.
 
+
+## Age and Fraud Analysis
+
+Fraudulent claims exhibited higher average claim amounts across all age groups.
+
+| Age Group | Non-Fraud Avg Claim | Fraud Avg Claim |
+| --------- | ------------------- | --------------- |
+| 15-25     | 51,189              | 60,135          |
+| 25-35     | 47,460              | 58,933          |
+| 35-45     | 50,526              | 61,330          |
+| 45-55     | 53,591              | 58,449          |
+| 55+       | 55,991              | 65,153          |
+
+### Key Observation
+
+Fraudulent claims consistently generated higher average losses across all age categories, 
+suggesting that fraud contributes to increased claim costs independent of policyholder age.
