@@ -94,3 +94,16 @@ Fraud rates varied significantly across severity categories.
 Major Damage incidents exhibited an exceptionally high fraud rate of 60.5%, substantially exceeding all other severity categories. 
 This suggests that severity may be an important indicator for fraud risk assessment.
 
+
+#Day 3
+
+## Fraud Severity Interaction
+
+After controlling for incident severity, average claim amounts were
+similar between fraudulent and non-fraudulent claims within each severity category.
+
+### Key Observation
+
+The higher average cost of fraudulent claims appears to be largely driven by the concentration of fraud
+within Major Damage incidents rather than fraud itself increasing claim amounts.
+
