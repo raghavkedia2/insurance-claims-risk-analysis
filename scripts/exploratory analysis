@@ -130,3 +130,27 @@ the `.groups` argument.
 6 Total Loss        Y                 64041.    36
 7 Trivial Damage    N                  5320.    84
 8 Trivial Damage    Y                  5038.     6
+
+
+> insurance_claims %>%
++   group_by(age_group, fraud_reported) %>%
++   summarise(
++     avg_claim = mean(total_claim_amount),
++     count = n()
++   )
+`summarise()` has grouped output by 'age_group'. You can override using the
+`.groups` argument.
+# A tibble: 10 × 4
+# Groups:   age_group [5]
+   age_group fraud_reported avg_claim count
+   <fct>     <chr>              <dbl> <int>
+ 1 15-25     N                 51189.    28
+ 2 15-25     Y                 60135     12
+ 3 25-35     N                 47460.   263
+ 4 25-35     Y                 58933.    89
+ 5 35-45     N                 50526.   297
+ 6 35-45     Y                 61330.    88
+ 7 45-55     N                 53591.   122
+ 8 45-55     Y                 58449.    37
+ 9 55+       N                 55991.    43
+10 55+       Y                 65153.    21
