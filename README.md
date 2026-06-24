@@ -34,7 +34,7 @@ The dataset contains policyholder, vehicle, incident, and claims information tha
 
 ## Current Status
 
-Project Progress: 30% Complete
+Project Progress: 35% Complete
 
 - [x] Repository Setup
 - [x] Dataset Collection
@@ -72,19 +72,25 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 - Generate underwriting and pricing recommendations.
 
 
-## Key Findings So Far
+## Key Findings
 
-### Age Group Analysis
-Average claim amounts were highest among policyholders aged 55+, indicating potential differences in claim severity across age groups.
+### Claim Severity
 
-### Incident Severity Analysis
-Major Damage and Total Loss incidents generated the highest average claim amounts, exceeding 62,000 on average.
+Major Damage and Total Loss incidents generated the highest average claim amounts, exceeding ₹62,000 on average.
 
 ### Fraud Analysis
-Fraudulent claims exhibited average claim costs approximately 20% higher than non-fraudulent claims.
 
-### Claim Component Analysis
-Vehicle claims represented the largest component of total losses, averaging approximately 37,929 per claim.
+Fraudulent claims averaged ₹60,302 compared to ₹50,289 for non-fraudulent claims.
+
+### Claim Components
+
+Vehicle claims were the largest contributor to total losses, averaging ₹37,929 per claim.
+
+### Age Analysis
+
+Policyholders aged 55+ exhibited the highest average claim amount among all age groups.
+
+
 
 ## Sample Visualization
 
