@@ -124,3 +124,27 @@ Fraudulent claims exhibited higher average claim amounts across all age groups.
 
 Fraudulent claims consistently generated higher average losses across all age categories, 
 suggesting that fraud contributes to increased claim costs independent of policyholder age.
+
+
+#Day 4 Findings
+
+
+## Risk Segmentation
+
+A rule-based risk segmentation framework was developed using incident severity and fraud status.
+
+| Risk Level  | Number of Policyholders |
+| ----------- | ----------------------: |
+| High Risk   |                     167 |
+| Medium Risk |                     324 |
+| Low Risk    |                     509 |
+
+### Classification Logic
+
+* **High Risk:** Major Damage and Fraud Reported
+* **Medium Risk:** Total Loss or Fraud Reported
+* **Low Risk:** All remaining claims
+
+### Key Observation
+
+Approximately 17% of policyholders were classified as High Risk, while over half of the portfolio was categorized as Low Risk.
