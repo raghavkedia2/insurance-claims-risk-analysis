@@ -174,3 +174,15 @@ the `.groups` argument.
   High Risk    Low Risk Medium Risk 
         167         509         324 
 
+> insurance_claims %>%
++   group_by(risk_level) %>%
++   summarise(
++     avg_claim = mean(total_claim_amount),
++     count = n()
++   )
+# A tibble: 3 × 3
+  risk_level  avg_claim count
+  <chr>           <dbl> <int>
+1 High Risk      64116.   167
+2 Low Risk       44774.   509
+3 Medium Risk    59458.   324
