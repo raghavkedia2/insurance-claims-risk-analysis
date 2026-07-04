@@ -154,3 +154,23 @@ the `.groups` argument.
  8 45-55     Y                 58449.    37
  9 55+       N                 55991.    43
 10 55+       Y                 65153.    21
+
+
+#Day 4
+
+> insurance_claims$risk_level <- ifelse(
++   insurance_claims$incident_severity == "Major Damage" &
++     insurance_claims$fraud_reported == "Y",
++   "High Risk",
++   ifelse(
++     insurance_claims$incident_severity == "Total Loss" |
++       insurance_claims$fraud_reported == "Y",
++     "Medium Risk",
++     "Low Risk"
++   )
++ )
+> table(insurance_claims$risk_level)
+
+  High Risk    Low Risk Medium Risk 
+        167         509         324 
+
