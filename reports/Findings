@@ -147,4 +147,23 @@ A rule-based risk segmentation framework was developed using incident severity a
 
 ### Key Observation
 
-Approximately 17% of policyholders were classified as High Risk, while over half of the portfolio was categorized as Low Risk.
+Approximately 17% of policyholders were classified as High Risk, 
+while over half of the portfolio was categorized as Low Risk.
+
+
+
+## Validation of Risk Segmentation
+
+The rule-based risk segmentation model was evaluated by comparing average claim amounts across the three risk categories.
+
+| Risk Level  | Average Claim Amount | Policyholders |
+| ----------- | -------------------: | ------------: |
+| High Risk   |               64,116 |           167 |
+| Medium Risk |               59,458 |           324 |
+| Low Risk    |               44,774 |           509 |
+
+### Key Observation
+
+The segmentation successfully differentiated policyholders based on claim costs.
+High Risk policyholders exhibited the highest average claim amount, followed by Medium Risk and Low Risk groups,
+indicating that the classification aligns with observed loss experience.
