@@ -1,12 +1,31 @@
-# Insurance Claims Risk Analysis & Actuarial Pricing Model
+# Insurance Claims Risk Analysis & Actuarial Pricing Framework
+![R](https://img.shields.io/badge/R-Programming-blue)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
+![Excel](https://img.shields.io/badge/Excel-Analysis-green)
+![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
 
 ## Project Objective
-To analyze insurance claims data and develop a risk-based pricing framework using actuarial and data analytics techniques. The project focuses on claim frequency, claim severity, risk segmentation, and premium estimation using Excel, R, and Power BI.
+To analyze insurance claims data using actuarial and data analytics techniques to identify key risk drivers, evaluate claim severity and fraud patterns, develop a rule-based risk segmentation framework, and propose data-driven pricing recommendations.
 
-## Tools Used
-- Excel
-- R
-- Power BI
+## Tools & Technologies
+
+- **R** – Data cleaning, exploratory analysis and risk segmentation
+- **Excel** – Data validation and preprocessing
+- **Power BI** – Interactive dashboard development (in progress)
+- **Git & GitHub** – Version control and project documentation
+
+
+## Methodology
+
+1. Data Collection
+2. Data Cleaning
+3. Exploratory Data Analysis
+4. Claim Severity Analysis
+5. Fraud Analysis
+6. Risk Segmentation
+7. Risk-Based Pricing Framework
+8. Dashboard Development
+
 
 ## Dataset
 
@@ -34,7 +53,7 @@ The dataset contains policyholder, vehicle, incident, and claims information tha
 
 ## Current Status
 
-Project Progress: 35% Complete
+Project Progress: 45% Complete
 
 - [x] Repository Setup
 - [x] Dataset Collection
@@ -74,22 +93,20 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 
 ## Key Findings
 
-### Claim Severity
+- Analyzed 1,000 insurance claims across 39 variables using R.
+- Identified incident severity as the strongest driver of claim amounts.
+- Found that fraudulent claims exhibited higher average claim costs than non-fraudulent claims.
+- Determined that vehicle claims accounted for the largest share of total claim costs.
+- Developed and validated a rule-based risk segmentation model that
+ classified policyholders into Low, Medium, and High Risk groups based on claim characteristics.
 
-Major Damage and Total Loss incidents generated the highest average claim amounts, exceeding ₹62,000 on average.
 
-### Fraud Analysis
+## Future Enhancements
 
-Fraudulent claims averaged ₹60,302 compared to ₹50,289 for non-fraudulent claims.
-
-### Claim Components
-
-Vehicle claims were the largest contributor to total losses, averaging ₹37,929 per claim.
-
-### Age Analysis
-
-Policyholders aged 55+ exhibited the highest average claim amount among all age groups.
-
+- Predictive claim severity modelling
+- Generalized Linear Models (GLMs)
+- Automated pricing recommendations
+- Interactive Power BI dashboard
 
 
 ## Sample Visualization
