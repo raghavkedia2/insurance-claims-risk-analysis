@@ -38,3 +38,19 @@
 +     x = "Incident Severity",
 +     y = "Number of Claims"
 +   )
+
+> insurance_claims %>%
++   count(fraud_reported)
+# A tibble: 2 × 2
+  fraud_reported     n
+  <chr>          <int>
+1 N                753
+2 Y                247
+> ggplot(insurance_claims,
++        aes(x = fraud_reported)) +
++   geom_bar() +
++   labs(
++     title = "Claim Frequency by Fraud Status",
++     x = "Fraud Reported",
++     y = "Number of Claims"
++   )
