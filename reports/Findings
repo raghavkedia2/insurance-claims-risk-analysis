@@ -190,3 +190,16 @@ indicating that the classification aligns with observed loss experience.
 The majority of insurance claims originated from policyholders aged 25–45, accounting for over 70% of all claims.
 The 35–45 age group recorded the highest claim frequency with 385 claims,
 while policyholders aged 15–25 and 55+ represented a much smaller proportion of the portfolio.
+
+## Claim Frequency by Fraud Status
+
+| Fraud Reported | Number of Claims |
+|---------------|-----------------:|
+| No | 753 |
+| Yes | 247 |
+
+### Key Observation
+
+The majority of claims (75.3%) were non-fraudulent, while 24.7% were reported as fraudulent.
+Although fraudulent claims represent a smaller proportion of the portfolio,
+they warrant further investigation due to their potential financial impact on insurers.
