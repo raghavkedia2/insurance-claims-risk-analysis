@@ -126,6 +126,7 @@ Fraudulent claims consistently generated higher average losses across all age ca
 suggesting that fraud contributes to increased claim costs independent of policyholder age.
 
 
+
 #Day 4 Findings
 
 
@@ -167,3 +168,25 @@ The rule-based risk segmentation model was evaluated by comparing average claim 
 The segmentation successfully differentiated policyholders based on claim costs.
 High Risk policyholders exhibited the highest average claim amount, followed by Medium Risk and Low Risk groups,
 indicating that the classification aligns with observed loss experience.
+
+
+
+#Day 5 Findings
+
+# Claim Frequency Analysis
+
+## Claim Frequency by Age Group
+
+| Age Group | Number of Claims |
+|-----------|-----------------:|
+| 15–25 | 40 |
+| 25–35 | 352 |
+| 35–45 | 385 |
+| 45–55 | 159 |
+| 55+ | 64 |
+
+### Key Observation
+
+The majority of insurance claims originated from policyholders aged 25–45, accounting for over 70% of all claims.
+The 35–45 age group recorded the highest claim frequency with 385 claims,
+while policyholders aged 15–25 and 55+ represented a much smaller proportion of the portfolio.
