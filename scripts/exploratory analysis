@@ -186,3 +186,28 @@ the `.groups` argument.
 1 High Risk      64116.   167
 2 Low Risk       44774.   509
 3 Medium Risk    59458.   324
+
+
+#Day 5
+
+> insurance_claims %>%
++   count(age_group)
+# A tibble: 5 × 2
+  age_group     n
+  <fct>     <int>
+1 15-25        40
+2 25-35       352
+3 35-45       385
+4 45-55       159
+5 55+          64
+> library(ggplot2)
+> 
+> ggplot(insurance_claims,
++        aes(x = age_group)) +
++   geom_bar() +
++   labs(
++     title = "Claim Frequency by Age Group",
++     x = "Age Group",
++     y = "Number of Claims"
++   )
+
