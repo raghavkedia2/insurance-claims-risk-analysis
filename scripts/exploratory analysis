@@ -211,3 +211,20 @@ the `.groups` argument.
 +     y = "Number of Claims"
 +   )
 
+> insurance_claims %>%
++   count(incident_severity)
+# A tibble: 4 × 2
+  incident_severity     n
+  <chr>             <int>
+1 Major Damage        276
+2 Minor Damage        354
+3 Total Loss          280
+4 Trivial Damage       90
+> ggplot(insurance_claims,
++        aes(x = incident_severity)) +
++   geom_bar() +
++   labs(
++     title = "Claim Frequency by Incident Severity",
++     x = "Incident Severity",
++     y = "Number of Claims"
++   )
