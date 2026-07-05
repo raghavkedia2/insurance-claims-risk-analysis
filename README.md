@@ -51,15 +51,16 @@ Key Variables:
 The dataset contains policyholder, vehicle, incident, and claims information that will be used to evaluate claim severity, fraud patterns, and insurance risk drivers.
 
 
+
 ## Current Status
 
-Project Progress: 45% Complete
+Project Progress: 50% Complete
 
 - [x] Repository Setup
 - [x] Dataset Collection
 - [x] Data Understanding
 - [x] Exploratory Data Analysis
-- [ ] Claim Frequency Analysis
+- [x] Claim Frequency Analysis (In Progress)
 - [ ] Claim Severity Analysis
 - [ ] Risk-Based Pricing Framework
 - [ ] Power BI Dashboard
@@ -99,6 +100,7 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 - Determined that vehicle claims accounted for the largest share of total claim costs.
 - Developed and validated a rule-based risk segmentation model that
  classified policyholders into Low, Medium, and High Risk groups based on claim characteristics.
+- Identified that policyholders aged 25–45 accounted for the majority of insurance claims in the dataset.
 
 
 ## Future Enhancements
