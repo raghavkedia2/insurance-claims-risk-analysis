@@ -1,5 +1,7 @@
 #Day 5
 
+## Claim Frequency by Age Group
+
 > insurance_claims %>%
 +   count(age_group)
 # A tibble: 5 × 2
@@ -21,6 +23,8 @@
 +     y = "Number of Claims"
 +   )
 
+## Claim Frequency by Incident Severity
+
 > insurance_claims %>%
 +   count(incident_severity)
 # A tibble: 4 × 2
@@ -38,6 +42,8 @@
 +     x = "Incident Severity",
 +     y = "Number of Claims"
 +   )
+
+## Claim Frequency by Fraud Reported
 
 > insurance_claims %>%
 +   count(fraud_reported)
@@ -58,6 +64,8 @@
 
 #Day 6
 
+## Claim Frequency by Risk Level
+
 > insurance_claims %>%
 +   count(risk_level)
 # A tibble: 3 × 2
@@ -74,6 +82,8 @@
 +     x = "Risk Level",
 +     y = "Number of Policyholders"
 +   )
+
+## Claim Frequency by Incident Type
 
 > insurance_claims %>%
 +   count(incident_type)
