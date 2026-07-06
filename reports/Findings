@@ -6,6 +6,7 @@ indicating substantial variation in claim severity.
 
 #Day 2
 
+
 ## Age Group Analysis
 
 Average claim amounts varied across age groups.
@@ -97,6 +98,7 @@ This suggests that severity may be an important indicator for fraud risk assessm
 
 #Day 3
 
+
 ## Fraud Severity Interaction
 
 After controlling for incident severity, average claim amounts were
@@ -152,7 +154,6 @@ Approximately 17% of policyholders were classified as High Risk,
 while over half of the portfolio was categorized as Low Risk.
 
 
-
 ## Validation of Risk Segmentation
 
 The rule-based risk segmentation model was evaluated by comparing average claim amounts across the three risk categories.
@@ -175,6 +176,7 @@ indicating that the classification aligns with observed loss experience.
 
 # Claim Frequency Analysis
 
+
 ## Claim Frequency by Age Group
 
 | Age Group | Number of Claims |
@@ -190,6 +192,7 @@ indicating that the classification aligns with observed loss experience.
 The majority of insurance claims originated from policyholders aged 25–45, accounting for over 70% of all claims.
 The 35–45 age group recorded the highest claim frequency with 385 claims,
 while policyholders aged 15–25 and 55+ represented a much smaller proportion of the portfolio.
+
 
 ## Claim Frequency by Fraud Status
 
@@ -208,6 +211,7 @@ they warrant further investigation due to their potential financial impact on in
 
 #Day 6 Findings
 
+
 ## Claim Frequency by Risk Level
 
 | Risk Level | Number of Policyholders |
@@ -221,3 +225,21 @@ they warrant further investigation due to their potential financial impact on in
 More than half of the policyholders (50.9%) were classified as Low Risk, 
 while 32.4% and 16.7% were categorized as Medium Risk and High Risk, respectively.
 This distribution provides a foundation for developing differentiated pricing strategies based on risk profiles.
+
+
+## Claim Frequency by Incident Type
+
+| Incident Type            | Number of Claims |
+| ------------------------ | ---------------: |
+| Multi-vehicle Collision  |              419 |
+| Single Vehicle Collision |              403 |
+| Vehicle Theft            |               94 |
+| Parked Car               |               84 |
+
+### Key Observation
+
+Multi-vehicle collisions were the most frequent type of claim (419), closely followed by single vehicle collisions (403).
+Together, these two collision categories account for 822 out of 1,000 claims (82.2%).
+Claims involving vehicle theft (94) and parked cars (84) were comparatively uncommon.
+This suggests that collision-related incidents are the primary source of insurance claims in the portfolio,
+highlighting where insurers may need to focus underwriting, pricing, and loss prevention efforts.
