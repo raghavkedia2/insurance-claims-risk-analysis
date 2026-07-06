@@ -1,1 +1,13 @@
+#Day 6
 
+## Claim severity by risk level
+
+> ggplot(insurance_claims,
++        aes(x = risk_level,
++            y = total_claim_amount)) +
++   geom_boxplot() +
++   labs(
++     title = "Claim Amount by Risk Level",
++     x = "Risk Level",
++     y = "Total Claim Amount"
++   )
