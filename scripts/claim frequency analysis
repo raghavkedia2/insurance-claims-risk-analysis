@@ -54,3 +54,23 @@
 +     x = "Fraud Reported",
 +     y = "Number of Claims"
 +   )
+
+
+#Day 6
+
+> insurance_claims %>%
++   count(risk_level)
+# A tibble: 3 × 2
+  risk_level      n
+  <chr>       <int>
+1 High Risk     167
+2 Low Risk      509
+3 Medium Risk   324
+> ggplot(insurance_claims,
++        aes(x = risk_level)) +
++   geom_bar() +
++   labs(
++     title = "Claim Frequency by Risk Level",
++     x = "Risk Level",
++     y = "Number of Policyholders"
++   )
