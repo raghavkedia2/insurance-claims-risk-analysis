@@ -74,3 +74,22 @@
 +     x = "Risk Level",
 +     y = "Number of Policyholders"
 +   )
+
+> insurance_claims %>%
++   count(incident_type)
+# A tibble: 4 × 2
+  incident_type                n
+  <chr>                    <int>
+1 Multi-vehicle Collision    419
+2 Parked Car                  84
+3 Single Vehicle Collision   403
+4 Vehicle Theft               94
+> ggplot(insurance_claims,
++        aes(x = incident_type)) +
++   geom_bar() +
++   labs(
++     title = "Claim Frequency by Incident Type",
++     x = "Incident Type",
++     y = "Number of Claims"
++   ) +
++   theme(axis.text.x = element_text(angle = 45, hjust = 1))
