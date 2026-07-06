@@ -54,17 +54,18 @@ The dataset contains policyholder, vehicle, incident, and claims information tha
 
 ## Current Status
 
-Project Progress: 50% Complete
+Project Progress: 55% Complete
 
 - [x] Repository Setup
 - [x] Dataset Collection
 - [x] Data Understanding
 - [x] Exploratory Data Analysis
-- [x] Claim Frequency Analysis (In Progress)
+- [x] Claim Frequency Analysis
 - [ ] Claim Severity Analysis
 - [ ] Risk-Based Pricing Framework
 - [ ] Power BI Dashboard
 - [ ] Final Report
+
 
 ## Repository Structure
 
@@ -101,6 +102,7 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 - Developed and validated a rule-based risk segmentation model that
  classified policyholders into Low, Medium, and High Risk groups based on claim characteristics.
 - Identified that policyholders aged 25–45 accounted for the majority of insurance claims in the dataset.
+- Collision-related incidents accounted for over 80% of all insurance claims, making them the primary driver of claim frequency.
 
 
 ## Future Enhancements
