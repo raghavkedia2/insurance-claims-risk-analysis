@@ -229,17 +229,15 @@ This distribution provides a foundation for developing differentiated pricing st
 
 ## Claim Frequency by Incident Type
 
-| Incident Type            | Number of Claims |
-| ------------------------ | ---------------: |
-| Multi-vehicle Collision  |              419 |
-| Single Vehicle Collision |              403 |
-| Vehicle Theft            |               94 |
-| Parked Car               |               84 |
+| Incident Type | Number of Claims |
+|---------------|-----------------:|
+| Multi-vehicle Collision | 419 |
+| Single Vehicle Collision | 403 |
+| Vehicle Theft | 94 |
+| Parked Car | 84 |
 
 ### Key Observation
 
-Multi-vehicle collisions were the most frequent type of claim (419), closely followed by single vehicle collisions (403).
-Together, these two collision categories account for 822 out of 1,000 claims (82.2%).
-Claims involving vehicle theft (94) and parked cars (84) were comparatively uncommon.
-This suggests that collision-related incidents are the primary source of insurance claims in the portfolio,
-highlighting where insurers may need to focus underwriting, pricing, and loss prevention efforts.
+Collision-related incidents dominated the portfolio, accounting for 82.2% of all claims.
+Multi-vehicle collisions were the most common claim type, followed closely by single vehicle collisions,
+while vehicle theft and parked car incidents occurred much less frequently.
