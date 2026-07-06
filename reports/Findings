@@ -203,3 +203,21 @@ while policyholders aged 15–25 and 55+ represented a much smaller proportion o
 The majority of claims (75.3%) were non-fraudulent, while 24.7% were reported as fraudulent.
 Although fraudulent claims represent a smaller proportion of the portfolio,
 they warrant further investigation due to their potential financial impact on insurers.
+
+
+
+#Day 6 Findings
+
+## Claim Frequency by Risk Level
+
+| Risk Level | Number of Policyholders |
+|------------|------------------------:|
+| Low Risk | 509 |
+| Medium Risk | 324 |
+| High Risk | 167 |
+
+### Key Observation
+
+More than half of the policyholders (50.9%) were classified as Low Risk, 
+while 32.4% and 16.7% were categorized as Medium Risk and High Risk, respectively.
+This distribution provides a foundation for developing differentiated pricing strategies based on risk profiles.
