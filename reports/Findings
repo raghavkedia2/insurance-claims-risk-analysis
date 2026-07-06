@@ -1,10 +1,10 @@
-#Day 1
+Day 1 Findings
 
 Average claim amount was approximately 52,762.
 Claim amounts ranged from 100 to 114,920,
 indicating substantial variation in claim severity.
 
-#Day 2
+Day 2 Findings
 
 
 ## Age Group Analysis
@@ -96,7 +96,7 @@ Major Damage incidents exhibited an exceptionally high fraud rate of 60.5%, subs
 This suggests that severity may be an important indicator for fraud risk assessment.
 
 
-#Day 3
+Day 3
 
 
 ## Fraud Severity Interaction
@@ -129,7 +129,7 @@ suggesting that fraud contributes to increased claim costs independent of policy
 
 
 
-#Day 4 Findings
+Day 4 Findings
 
 
 ## Risk Segmentation
@@ -172,7 +172,7 @@ indicating that the classification aligns with observed loss experience.
 
 
 
-#Day 5 Findings
+Day 5 Findings
 
 # Claim Frequency Analysis
 
@@ -241,3 +241,19 @@ This distribution provides a foundation for developing differentiated pricing st
 Collision-related incidents dominated the portfolio, accounting for 82.2% of all claims.
 Multi-vehicle collisions were the most common claim type, followed closely by single vehicle collisions,
 while vehicle theft and parked car incidents occurred much less frequently.
+
+
+# Claim Severity Analysis
+
+## Claim Severity by Risk Level
+
+| Risk Level | Average Claim Amount |
+|------------|---------------------:|
+| Low Risk | 44,774 |
+| Medium Risk | 59,458 |
+| High Risk | 64,116 |
+
+### Key Observation
+
+High-risk policyholders exhibited the highest average claim amounts, followed by medium-risk policyholders.
+Low-risk policyholders generated substantially lower claim costs, supporting the effectiveness of the rule-based risk segmentation model.
