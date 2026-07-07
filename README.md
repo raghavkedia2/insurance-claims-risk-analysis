@@ -129,7 +129,7 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 
 ### Claim Amount by Fraud Status
 
-![Claim Amount by Fraud Status](images/claim_amount_by_fraud_status.JPG)
+![Claim Amount by Fraud Status](images/Claim_severity_by_Fraud_Status.JPG)
 
 
 
