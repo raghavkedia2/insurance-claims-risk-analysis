@@ -257,3 +257,27 @@ while vehicle theft and parked car incidents occurred much less frequently.
 
 High-risk policyholders exhibited the highest average claim amounts, followed by medium-risk policyholders.
 Low-risk policyholders generated substantially lower claim costs, supporting the effectiveness of the rule-based risk segmentation model.
+
+## Claim Severity by Incident Type
+
+| Incident Type | Average Claim Amount |
+|---------------|---------------------:|
+| Single Vehicle Collision | 64,445 |
+| Multi-vehicle Collision | 61,637 |
+| Vehicle Theft | 5,517 |
+| Parked Car | 5,308 |
+
+### Key Observation
+
+Collision-related incidents generated substantially higher average claim amounts than vehicle theft or parked car incidents.
+Single vehicle collisions recorded the highest average claim cost,
+indicating that collision events are the primary contributors to claim severity within the portfolio.
+
+## Policy Deductible vs Claim Amount
+
+Correlation Coefficient: **0.023**
+
+### Key Observation
+
+The correlation between policy deductible and total claim amount was close to zero, indicating little evidence of a linear relationship.
+Within this dataset, deductible values do not appear to be a significant driver of claim severity.
