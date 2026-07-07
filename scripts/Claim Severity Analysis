@@ -41,3 +41,20 @@
 +   ) +
 +   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
+
+## Claim Severity by Policy Deductible
+
+> cor(
++   insurance_claims$policy_deductable,
++   insurance_claims$total_claim_amount
++ )
+[1] 0.02283932
+> ggplot(insurance_claims,
++        aes(x = policy_deductable,
++            y = total_claim_amount)) +
++   geom_point(alpha = 0.6) +
++   labs(
++     title = "Policy Deductible vs Total Claim Amount",
++     x = "Policy Deductible",
++     y = "Total Claim Amount"
++   )
