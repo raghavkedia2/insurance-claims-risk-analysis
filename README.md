@@ -106,7 +106,6 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 
 ## Future Enhancements
 
-- Predictive claim severity modelling
 - Generalized Linear Models (GLMs)
 - Automated pricing recommendations
 - Interactive Power BI dashboard
@@ -123,7 +122,7 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 
 ### Claim Amount by Incident Severity
 
-![Claim Amount by Incident Severity](images/Claim frequency by incident severity.JPG)
+![Claim Amount by Incident Severity](images/Claim_amount_by_incident_severity.JPG)
 
 
 
