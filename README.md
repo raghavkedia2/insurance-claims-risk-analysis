@@ -135,4 +135,4 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 
 ### Claim Amount by Risk Level
 
-![Claim Amount by Risk Level](images/claim_amount_by_risk_level.JPG)
+![Claim Amount by Risk Level](images/Claim_amount_by_risk_level.JPG)
