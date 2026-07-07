@@ -123,7 +123,7 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 
 ### Claim Amount by Incident Severity
 
-![Claim Amount by Incident Severity](images/claim_amount_by_incident_severity.JPG)
+![Claim Amount by Incident Severity](images/Claim frequency by incident severity.JPG)
 
 
 
