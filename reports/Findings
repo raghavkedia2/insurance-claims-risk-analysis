@@ -313,3 +313,18 @@ indicating that age alone is not a strong predictor of claim severity.
 Fraudulent claims recorded higher average and median claim amounts than non-fraudulent claims. 
 This suggests that fraud is associated with increased claim severity and should be considered
 an important factor in insurance risk assessment and pricing.
+
+## Claim Severity by Number of Vehicles Involved
+
+| Vehicles Involved | Average Claim Amount | Number of Claims |
+|------------------:|---------------------:|-----------------:|
+| 1 | 46,361 | 581 |
+| 2 | 64,053 | 30 |
+| 3 | 61,443 | 358 |
+| 4 | 61,540 | 31 |
+
+### Key Observation
+
+Claims involving multiple vehicles generally resulted in higher average claim amounts than single-vehicle incidents. 
+Although single-vehicle collisions were more frequent, multi-vehicle accidents exhibited greater claim severity, 
+indicating that the number of vehicles involved is an important factor for insurance risk assessment.
