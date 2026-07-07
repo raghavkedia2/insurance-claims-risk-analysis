@@ -4,6 +4,8 @@ Average claim amount was approximately 52,762.
 Claim amounts ranged from 100 to 114,920,
 indicating substantial variation in claim severity.
 
+
+
 Day 2 Findings
 
 
@@ -96,6 +98,7 @@ Major Damage incidents exhibited an exceptionally high fraud rate of 60.5%, subs
 This suggests that severity may be an important indicator for fraud risk assessment.
 
 
+
 Day 3
 
 
@@ -108,7 +111,6 @@ similar between fraudulent and non-fraudulent claims within each severity catego
 
 The higher average cost of fraudulent claims appears to be largely driven by the concentration of fraud
 within Major Damage incidents rather than fraud itself increasing claim amounts.
-
 
 ## Age and Fraud Analysis
 
@@ -174,8 +176,8 @@ indicating that the classification aligns with observed loss experience.
 
 Day 5 Findings
 
-# Claim Frequency Analysis
 
+# Claim Frequency Analysis
 
 ## Claim Frequency by Age Group
 
@@ -259,7 +261,9 @@ High-risk policyholders exhibited the highest average claim amounts, followed by
 Low-risk policyholders generated substantially lower claim costs, supporting the effectiveness of the rule-based risk segmentation model.
 
 
+
 Day 7 Findings
+
 
 ## Claim Severity by Incident Type
 
@@ -328,3 +332,22 @@ an important factor in insurance risk assessment and pricing.
 Claims involving multiple vehicles generally resulted in higher average claim amounts than single-vehicle incidents. 
 Although single-vehicle collisions were more frequent, multi-vehicle accidents exhibited greater claim severity, 
 indicating that the number of vehicles involved is an important factor for insurance risk assessment.
+
+## Claim Severity by Incident Severity
+
+| Incident Severity | Average Claim Amount |
+|-------------------|---------------------:|
+| Major Damage | 64,067 |
+| Minor Damage | 48,643 |
+| Total Loss | 62,081 |
+| Trivial Damage | 5,302 |
+
+### Key Observation
+
+Incident severity is one of the strongest predictors of claim amount in the portfolio. 
+Claims involving Major Damage and Total Loss produce significantly higher losses than less severe incidents,
+highlighting the importance of incorporating incident severity into actuarial pricing models and underwriting decisions
+
+
+
+Day 8 Findings
