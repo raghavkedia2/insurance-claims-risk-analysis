@@ -82,3 +82,29 @@
 +     x = "Fraud Reported",
 +     y = "Total Claim Amount"
 +   )
+
+## Claim severity by Number of Vehicles Involved
+
+> insurance_claims %>%
++   group_by(number_of_vehicles_involved) %>%
++   summarise(
++     avg_claim = mean(total_claim_amount),
++     count = n()
++   )
+# A tibble: 4 × 3
+  number_of_vehicles_involved avg_claim count
+                        <dbl>     <dbl> <int>
+1                           1    46361.   581
+2                           2    64053     30
+3                           3    61443.   358
+4                           4    61540.    31
+> ggplot(insurance_claims,
++        aes(x = factor(number_of_vehicles_involved),
++            y = total_claim_amount)) +
++   geom_boxplot() +
++   labs(
++     title = "Claim Amount by Number of Vehicles Involved",
++     x = "Number of Vehicles Involved",
++     y = "Total Claim Amount"
++   )
+
