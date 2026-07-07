@@ -117,7 +117,7 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 
 ### Claim Frequency by Age Group
 
-![Claim Frequency by Age Group](images/claim_frequency_age_group.JPG)
+![Claim Frequency by Age Group](images/Claim_frequency_by_age_group.JPG)
 
 
 
