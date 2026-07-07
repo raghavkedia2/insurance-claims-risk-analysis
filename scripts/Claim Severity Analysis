@@ -11,3 +11,33 @@
 +     x = "Risk Level",
 +     y = "Total Claim Amount"
 +   )
+
+
+#Day 7
+
+## Claim severity by Incident Type
+
+> insurance_claims %>%
++   group_by(incident_type) %>%
++   summarise(
++     avg_claim = mean(total_claim_amount),
++     count = n()
++   )
+# A tibble: 4 × 3
+  incident_type            avg_claim count
+  <chr>                        <dbl> <int>
+1 Multi-vehicle Collision     61637.   419
+2 Parked Car                   5308.    84
+3 Single Vehicle Collision    64445.   403
+4 Vehicle Theft                5517.    94
+> ggplot(insurance_claims,
++        aes(x = incident_type,
++            y = total_claim_amount)) +
++   geom_boxplot() +
++   labs(
++     title = "Claim Amount by Incident Type",
++     x = "Incident Type",
++     y = "Total Claim Amount"
++   ) +
++   theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
