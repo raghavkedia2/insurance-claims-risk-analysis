@@ -209,7 +209,7 @@ they warrant further investigation due to their potential financial impact on in
 
 
 
-#Day 6 Findings
+Day 6 Findings
 
 
 ## Claim Frequency by Risk Level
@@ -258,6 +258,9 @@ while vehicle theft and parked car incidents occurred much less frequently.
 High-risk policyholders exhibited the highest average claim amounts, followed by medium-risk policyholders.
 Low-risk policyholders generated substantially lower claim costs, supporting the effectiveness of the rule-based risk segmentation model.
 
+
+Day 7 Findings
+
 ## Claim Severity by Incident Type
 
 | Incident Type | Average Claim Amount |
@@ -297,3 +300,16 @@ Within this dataset, deductible values do not appear to be a significant driver 
 Older policyholders (55+) recorded the highest average claim amounts, while policyholders aged 25–35 had the lowest. 
 Although claim severity varies across age groups, the boxplot shows considerable overlap,
 indicating that age alone is not a strong predictor of claim severity.
+
+## Claim Severity by Fraud Status
+
+| Fraud Reported | Average Claim Amount |
+|---------------|---------------------:|
+| No | 50,289 |
+| Yes | 60,302 |
+
+### Key Observation
+
+Fraudulent claims recorded higher average and median claim amounts than non-fraudulent claims. 
+This suggests that fraud is associated with increased claim severity and should be considered
+an important factor in insurance risk assessment and pricing.
