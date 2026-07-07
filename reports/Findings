@@ -281,3 +281,19 @@ Correlation Coefficient: **0.023**
 
 The correlation between policy deductible and total claim amount was close to zero, indicating little evidence of a linear relationship.
 Within this dataset, deductible values do not appear to be a significant driver of claim severity.
+
+## Claim Severity by Age Group
+
+| Age Group | Average Claim Amount |
+|-----------|---------------------:|
+| 15–25 | 53,873 |
+| 25–35 | 50,361 |
+| 35–45 | 52,996 |
+| 45–55 | 54,721 |
+| 55+ | 58,997 |
+
+### Key Observation
+
+Older policyholders (55+) recorded the highest average claim amounts, while policyholders aged 25–35 had the lowest. 
+Although claim severity varies across age groups, the boxplot shows considerable overlap,
+indicating that age alone is not a strong predictor of claim severity.
