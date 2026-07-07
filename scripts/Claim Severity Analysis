@@ -108,3 +108,16 @@
 +     y = "Total Claim Amount"
 +   )
 
+## Claim amount by Incident Severity
+
+> library(ggplot2)
+> 
+> ggplot(insurance_claims,
++        aes(x = incident_severity,
++            y = total_claim_amount)) +
++   geom_boxplot() +
++   labs(
++     title = "Claim Amount by Incident Severity",
++     x = "Incident Severity",
++     y = "Total Claim Amount"
++   )
