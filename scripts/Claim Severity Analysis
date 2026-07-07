@@ -58,3 +58,15 @@
 +     x = "Policy Deductible",
 +     y = "Total Claim Amount"
 +   )
+
+## Claim severity by Age group
+
+> ggplot(insurance_claims,
++        aes(x = age_group,
++            y = total_claim_amount)) +
++   geom_boxplot() +
++   labs(
++     title = "Claim Amount by Age Group",
++     x = "Age Group",
++     y = "Total Claim Amount"
++   )
