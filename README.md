@@ -54,14 +54,14 @@ The dataset contains policyholder, vehicle, incident, and claims information tha
 
 ## Current Status
 
-Project Progress: 55% Complete
+Project Progress: 70% Complete
 
 - [x] Repository Setup
 - [x] Dataset Collection
 - [x] Data Understanding
 - [x] Exploratory Data Analysis
 - [x] Claim Frequency Analysis
-- [ ] Claim Severity Analysis
+- [x] Claim Severity Analysis
 - [ ] Risk-Based Pricing Framework
 - [ ] Power BI Dashboard
 - [ ] Final Report
@@ -96,13 +96,12 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 ## Key Findings
 
 - Analyzed 1,000 insurance claims across 39 variables using R.
-- Identified incident severity as the strongest driver of claim amounts.
-- Found that fraudulent claims exhibited higher average claim costs than non-fraudulent claims.
-- Determined that vehicle claims accounted for the largest share of total claim costs.
-- Developed and validated a rule-based risk segmentation model that
- classified policyholders into Low, Medium, and High Risk groups based on claim characteristics.
-- Identified that policyholders aged 25–45 accounted for the majority of insurance claims in the dataset.
-- Collision-related incidents accounted for over 80% of all insurance claims, making them the primary driver of claim frequency.
+- Collision-related incidents accounted for over 80% of all claims.
+- Fraudulent claims exhibited higher average claim amounts than non-fraudulent claims.
+- Vehicle claims represented the largest component of total claim costs.
+- Older policyholders (55+) recorded the highest average claim amounts.
+- Multi-vehicle incidents produced higher claim severity than single-vehicle incidents.
+- Developed an initial rule-based risk segmentation model classifying policyholders into Low, Medium, and High Risk categories.
 
 
 ## Future Enhancements
@@ -113,8 +112,27 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 - Interactive Power BI dashboard
 
 
-## Sample Visualization
+
+## Sample Visualizations
+
+### Claim Frequency by Age Group
+
+![Claim Frequency by Age Group](images/claim_frequency_age_group.JPG)
+
+
 
 ### Claim Amount by Incident Severity
 
-![Severity vs Claim Amount](images/severity_vs_claim_amount.JPG)
+![Claim Amount by Incident Severity](images/claim_amount_by_incident_severity.JPG)
+
+
+
+### Claim Amount by Fraud Status
+
+![Claim Amount by Fraud Status](images/claim_amount_by_fraud_status.JPG)
+
+
+
+### Claim Amount by Risk Level
+
+![Claim Amount by Risk Level](images/claim_amount_by_risk_level.JPG)
