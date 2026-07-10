@@ -371,3 +371,33 @@ Day 8 Findings
 While female policyholders exhibited marginally higher average claim costs, the difference was not substantial.
 This suggests that gender is a relatively weak predictor of claim severity 
 compared with variables such as incident severity,fraud status, and incident type.
+
+
+Day 9 Findings
+
+## Rule-Based Risk Segmentation
+
+A rule-based risk scoring model was developed using key claim characteristics identified during exploratory analysis.
+
+### Risk Factors Used
+
+- Incident Severity
+- Fraud Reported
+- Number of Vehicles Involved
+
+Each policyholder received a risk score, which was converted into five risk categories:
+
+- Very Low Risk
+- Low Risk
+- Medium Risk
+- High Risk
+- Very High Risk
+
+### Key Findings
+
+- The Very Low Risk category recorded the lowest average claim amount (₹30,266).
+- High Risk policyholders exhibited the highest average claim amount (₹65,463).
+- Although the remaining categories were not perfectly ordered by average claim amount, 
+  the model successfully differentiated low-risk policyholders from higher-risk groups.
+- The framework demonstrates how multiple claim characteristics can be combined
+  into a practical actuarial risk segmentation model for underwriting and pricing.
