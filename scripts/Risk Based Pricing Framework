@@ -1,1 +1,45 @@
+#Day 9
 
+> insurance_claims$risk_score <- 0
+> insurance_claims$risk_score <- insurance_claims$risk_score +
++   ifelse(insurance_claims$incident_severity == "Major Damage", 2,
++          ifelse(insurance_claims$incident_severity == "Total Loss", 1, 0))
+> insurance_claims$risk_score <- insurance_claims$risk_score +
++   ifelse(insurance_claims$fraud_reported == "Y", 2, 0)
+> insurance_claims$risk_score <- insurance_claims$risk_score +
++   ifelse(insurance_claims$number_of_vehicles_involved >= 2, 1, 0)
+> table(insurance_claims$risk_score)
+
+  0   1   2   3   4   5 
+281 237 208  88 102  84 
+> insurance_claims$risk_category <- ifelse(
++   insurance_claims$risk_score == 0, "Very Low Risk",
++   ifelse(
++     insurance_claims$risk_score == 1, "Low Risk",
++     ifelse(
++       insurance_claims$risk_score == 2, "Medium Risk",
++       ifelse(
++         insurance_claims$risk_score %in% c(3, 4), "High Risk",
++         "Very High Risk"
++       )
++     )
++   )
++ )
+> table(insurance_claims$risk_category)
+
+     High Risk       Low Risk    Medium Risk Very High Risk  Very Low Risk 
+           190            237            208             84            281 
+> insurance_claims %>%
++   group_by(risk_category) %>%
++   summarise(
++     avg_claim = mean(total_claim_amount),
++     count = n()
++   )
+# A tibble: 5 × 3
+  risk_category  avg_claim count
+  <chr>              <dbl> <int>
+1 High Risk         65463.   190
+2 Low Risk          62163.   237
+3 Medium Risk       57523.   208
+4 Very High Risk    60975.    84
+5 Very Low Risk     30266.   281
