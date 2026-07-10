@@ -121,3 +121,29 @@
 +     x = "Incident Severity",
 +     y = "Total Claim Amount"
 +   )
+
+#Day 8
+
+
+> insurance_claims %>%
++   group_by(insured_sex) %>%
++   summarise(
++     avg_claim = mean(total_claim_amount),
++     count = n()
++   )
+# A tibble: 2 × 3
+  insured_sex avg_claim count
+  <chr>           <dbl> <int>
+1 FEMALE         53343.   537
+2 MALE           52088.   463
+> ggplot(insurance_claims,
++        aes(x = insured_sex,
++            y = total_claim_amount)) +
++   geom_boxplot() +
++   labs(
++     title = "Claim Amount by Gender",
++     x = "Gender",
++     y = "Total Claim Amount"
++   )
+
+
