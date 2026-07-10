@@ -351,3 +351,23 @@ highlighting the importance of incorporating incident severity into actuarial pr
 
 
 Day 8 Findings
+
+## Claim Severity by Gender
+
+| Gender | Average Claim Amount | Number of Claims |
+|--------|---------------------:|-----------------:|
+| Female | 53,343 | 537 |
+| Male | 52,088 | 463 |
+
+### Key Findings
+
+- Female policyholders recorded a slightly higher average claim amount than male policyholders.
+- The difference in claim severity between genders was relatively small.
+- The boxplot showed considerable overlap in claim distributions for both groups.
+- Gender alone does not appear to be a significant predictor of claim severity in this dataset.
+
+### Business Interpretation
+
+While female policyholders exhibited marginally higher average claim costs, the difference was not substantial.
+This suggests that gender is a relatively weak predictor of claim severity 
+compared with variables such as incident severity,fraud status, and incident type.
