@@ -102,7 +102,8 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 - Older policyholders (55+) recorded the highest average claim amounts.
 - Multi-vehicle incidents produced higher claim severity than single-vehicle incidents.
 - Developed an initial rule-based risk segmentation model classifying policyholders into Low, Medium, and High Risk categories.
-
+- Developed a 5-level rule-based risk segmentation model using incident severity, fraud status, and number of vehicles involved.
+- Successfully differentiated Very Low Risk policyholders from higher-risk groups based on average claim experience.
 
 ## Future Enhancements
 
