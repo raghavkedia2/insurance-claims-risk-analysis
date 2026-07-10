@@ -41,5 +41,15 @@
 1 High Risk         65463.   190
 2 Low Risk          62163.   237
 3 Medium Risk       57523.   208
+
+> ggplot(insurance_claims,
++        aes(x = risk_category,
++            y = total_claim_amount)) +
++   geom_boxplot() +
++   labs(
++     title = "Claim Amount by Risk Category",
++     x = "Risk Category",
++     y = "Total Claim Amount"
++   )
 4 Very High Risk    60975.    84
 5 Very Low Risk     30266.   281
