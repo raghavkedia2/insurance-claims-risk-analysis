@@ -4,8 +4,10 @@
 ![Excel](https://img.shields.io/badge/Excel-Analysis-green)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
 
+
 ## Project Objective
 To analyze insurance claims data using actuarial and data analytics techniques to identify key risk drivers, evaluate claim severity and fraud patterns, develop a rule-based risk segmentation framework, and propose data-driven pricing recommendations.
+
 
 ## Tools & Technologies
 
@@ -80,6 +82,7 @@ insurance-claims-risk-analysis/
 └── README.md
 ```
 
+
 ## Project Goal
 The objective is to identify key risk drivers affecting insurance claims and develop actuarially justified pricing recommendations using historical claims data.
 
@@ -104,13 +107,16 @@ The objective is to identify key risk drivers affecting insurance claims and dev
 - Developed an initial rule-based risk segmentation model classifying policyholders into Low, Medium, and High Risk categories.
 - Developed a 5-level rule-based risk segmentation model using incident severity, fraud status, and number of vehicles involved.
 - Successfully differentiated Very Low Risk policyholders from higher-risk groups based on average claim experience.
+- Designed a risk-based pricing framework that recommends premium adjustments using actuarial risk factors and historical claim
+  experience.
+- Demonstrated how premium differentiation can better align pricing with expected claim costs.
+
 
 ## Future Enhancements
 
 - Generalized Linear Models (GLMs)
 - Automated pricing recommendations
 - Interactive Power BI dashboard
-
 
 
 ## Sample Visualizations
