@@ -401,3 +401,43 @@ Each policyholder received a risk score, which was converted into five risk cate
   the model successfully differentiated low-risk policyholders from higher-risk groups.
 - The framework demonstrates how multiple claim characteristics can be combined
   into a practical actuarial risk segmentation model for underwriting and pricing.
+
+
+Day 10 Findings
+
+# Risk-Based Pricing Framework
+
+## Base Premium
+
+Average Current Premium: **₹1,256.41**
+
+A rule-based pricing framework was developed using actuarial risk factors identified during the analysis.
+The portfolio average premium was used as the base premium, with risk-specific multipliers applied to generate recommended premiums.
+
+## Premium Multipliers
+
+| Risk Category | Multiplier |
+|---------------|-----------:|
+| Very Low Risk | 0.85 |
+| Low Risk | 0.95 |
+| Medium Risk | 1.00 |
+| High Risk | 1.15 |
+| Very High Risk | 1.30 |
+
+## Recommended Premiums
+
+| Risk Category | Current Avg Premium | Recommended Avg Premium |
+|---------------|--------------------:|------------------------:|
+| Very Low Risk | ₹1,260 | ₹1,068 |
+| Low Risk | ₹1,259 | ₹1,194 |
+| Medium Risk | ₹1,259 | ₹1,256 |
+| High Risk | ₹1,262 | ₹1,445 |
+| Very High Risk | ₹1,217 | ₹1,633 |
+
+## Key Findings
+
+- The existing portfolio charged similar average premiums across all policyholders regardless of risk.
+- The proposed pricing framework adjusts premiums based on actuarial risk factors,
+  improving alignment between premium levels and expected claim costs.
+- High-risk policyholders receive higher recommended premiums, while lower-risk policyholders receive premium discounts,
+  demonstrating a practical risk-based pricing approach.
