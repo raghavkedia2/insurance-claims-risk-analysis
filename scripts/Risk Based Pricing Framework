@@ -53,3 +53,41 @@
 +   )
 4 Very High Risk    60975.    84
 5 Very Low Risk     30266.   281
+
+
+#Day 10
+
+> mean(insurance_claims$policy_annual_premium)
+[1] 1256.406
+> 
+> insurance_claims$premium_multiplier <- ifelse(
++   insurance_claims$risk_category == "Very Low Risk", 0.85,
++   ifelse(
++     insurance_claims$risk_category == "Low Risk", 0.95,
++     ifelse(
++       insurance_claims$risk_category == "Medium Risk", 1.00,
++       ifelse(
++         insurance_claims$risk_category == "High Risk", 1.15,
++         1.30
++       )
++     )
++   )
++ )
+> 
+> insurance_claims$recommended_premium <-
++   1256.406 * insurance_claims$premium_multiplier
+> insurance_claims %>%
++   group_by(risk_category) %>%
++   summarise(
++     avg_current_premium = mean(policy_annual_premium),
++     avg_recommended_premium = mean(recommended_premium),
++     count = n()
++   )
+# A tibble: 5 × 4
+  risk_category  avg_current_premium avg_recommended_premium count
+  <chr>                        <dbl>                   <dbl> <int>
+1 High Risk                    1262.                   1445.   190
+2 Low Risk                     1259.                   1194.   237
+3 Medium Risk                  1259.                   1256.   208
+4 Very High Risk               1217.                   1633.    84
+5 Very Low Risk                1260.                   1068.   281
