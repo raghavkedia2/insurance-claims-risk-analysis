@@ -54,7 +54,7 @@ The dataset contains policyholder, vehicle, incident, and claims information tha
 
 ## Current Status
 
-Project Progress: 70% Complete
+Project Progress: 85% Complete
 
 - [x] Repository Setup
 - [x] Dataset Collection
@@ -62,7 +62,7 @@ Project Progress: 70% Complete
 - [x] Exploratory Data Analysis
 - [x] Claim Frequency Analysis
 - [x] Claim Severity Analysis
-- [ ] Risk-Based Pricing Framework
+- [x] Risk-Based Pricing Framework
 - [ ] Power BI Dashboard
 - [ ] Final Report
 
