@@ -1,62 +1,96 @@
 # Insurance Claims Risk Analysis & Actuarial Pricing Framework
+
 ![R](https://img.shields.io/badge/R-Programming-blue)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow)
 ![Excel](https://img.shields.io/badge/Excel-Analysis-green)
-![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
+![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-black)
 
+---
 
-## Project Objective
-To analyze insurance claims data using actuarial and data analytics techniques to identify key risk drivers, evaluate claim severity and fraud patterns, develop a rule-based risk segmentation framework, and propose data-driven pricing recommendations.
+## Project Overview
 
+This project analyzes historical insurance claims data using actuarial and data analytics techniques to identify key risk drivers, evaluate claim frequency and severity patterns, detect fraud trends, develop a multi-level risk segmentation model, and recommend risk-based insurance premiums.
 
-## Tools & Technologies
+The project combines **R**, **Excel**, and **Power BI** to support data-driven underwriting and pricing decisions.
 
-- **R** – Data cleaning, exploratory analysis and risk segmentation
+---
+
+## Dashboard Preview
+
+![Power BI Dashboard](dashboard/Insurance%20Claims%20Dashboard.jpg)
+
+---
+
+# Project Objectives
+
+- Analyze 1,000+ insurance claims records.
+- Evaluate claim frequency and claim severity patterns.
+- Identify factors influencing insurance claim costs.
+- Develop a multi-level policyholder risk segmentation framework.
+- Recommend risk-adjusted insurance premiums using historical claims experience.
+- Build an interactive Power BI dashboard for insurance portfolio monitoring.
+
+---
+
+# Tools & Technologies
+
+- **R** – Data cleaning, exploratory data analysis, statistical summaries and risk segmentation
 - **Excel** – Data validation and preprocessing
-- **Power BI** – Interactive dashboard development (in progress)
-- **Git & GitHub** – Version control and project documentation
+- **Power BI** – Interactive dashboard development
+- **Git & GitHub** – Version control and documentation
 
+Libraries Used:
 
-## Methodology
+- dplyr
+- ggplot2
+- readxl
 
-1. Data Collection
-2. Data Cleaning
-3. Exploratory Data Analysis
-4. Claim Severity Analysis
-5. Fraud Analysis
-6. Risk Segmentation
-7. Risk-Based Pricing Framework
-8. Dashboard Development
+---
 
+# Project Methodology
 
-## Dataset
+1. Repository Setup
+2. Dataset Collection
+3. Data Understanding
+4. Exploratory Data Analysis
+5. Claim Frequency Analysis
+6. Claim Severity Analysis
+7. Risk Segmentation
+8. Risk-Based Pricing Framework
+9. Power BI Dashboard
+10. Final Report
 
-Source: Insurance Fraud Detection Dataset (Kaggle)
+---
 
-Dataset Size:
+# Dataset
 
-* 1,000 insurance claim records
-* 39 variables
+**Source:** Kaggle Insurance Fraud Detection Dataset
 
-Key Variables:
+### Dataset Summary
 
-* Age
-* Policy Annual Premium
-* Policy Deductible
-* Incident Severity
-* Total Claim Amount
-* Injury Claim
-* Property Claim
-* Vehicle Claim
-* Fraud Reported
+- 1,000 insurance claim records
+- 39 variables
 
-The dataset contains policyholder, vehicle, incident, and claims information that will be used to evaluate claim severity, fraud patterns, and insurance risk drivers.
+### Key Variables
 
+- Age
+- Policy Annual Premium
+- Policy Deductible
+- Incident Severity
+- Incident Type
+- Total Claim Amount
+- Injury Claim
+- Property Claim
+- Vehicle Claim
+- Fraud Reported
 
+The dataset includes policyholder, vehicle, incident and claim information that enables insurance risk analysis, fraud assessment and premium recommendation.
 
-## Current Status
+---
 
-Project Progress: 85% Complete
+# Project Status
+
+**Project Progress: 100% Complete**
 
 - [x] Repository Setup
 - [x] Dataset Collection
@@ -64,12 +98,14 @@ Project Progress: 85% Complete
 - [x] Exploratory Data Analysis
 - [x] Claim Frequency Analysis
 - [x] Claim Severity Analysis
+- [x] Risk Segmentation
 - [x] Risk-Based Pricing Framework
-- [ ] Power BI Dashboard
-- [ ] Final Report
+- [x] Power BI Dashboard
+- [x] Final Report
 
+---
 
-## Repository Structure
+# Repository Structure
 
 ```text
 insurance-claims-risk-analysis/
@@ -82,63 +118,92 @@ insurance-claims-risk-analysis/
 └── README.md
 ```
 
+---
 
-## Project Goal
-The objective is to identify key risk drivers affecting insurance claims and develop actuarially justified pricing recommendations using historical claims data.
+# Key Findings
 
-
-## Expected Outcomes
-
-- Identify high-risk policyholder segments.
-- Analyze claim frequency and severity patterns.
-- Develop a risk-based pricing framework.
-- Create interactive dashboards for portfolio monitoring.
-- Generate underwriting and pricing recommendations.
-
-
-## Key Findings
-
-- Analyzed 1,000 insurance claims across 39 variables using R.
-- Collision-related incidents accounted for over 80% of all claims.
+- Analyzed **1,000 insurance claims** across **39 variables** using R.
+- Collision-related incidents accounted for **over 80%** of total claims.
 - Fraudulent claims exhibited higher average claim amounts than non-fraudulent claims.
 - Vehicle claims represented the largest component of total claim costs.
-- Older policyholders (55+) recorded the highest average claim amounts.
-- Multi-vehicle incidents produced higher claim severity than single-vehicle incidents.
-- Developed an initial rule-based risk segmentation model classifying policyholders into Low, Medium, and High Risk categories.
-- Developed a 5-level rule-based risk segmentation model using incident severity, fraud status, and number of vehicles involved.
-- Successfully differentiated Very Low Risk policyholders from higher-risk groups based on average claim experience.
-- Designed a risk-based pricing framework that recommends premium adjustments using actuarial risk factors and historical claim
-  experience.
-- Demonstrated how premium differentiation can better align pricing with expected claim costs.
+- Policyholders aged **55+** recorded the highest average claim amounts.
+- Multi-vehicle collisions generated substantially higher claim severity than parked-car and theft incidents.
+- Developed a **five-level rule-based risk segmentation model**:
+  - Very Low Risk
+  - Low Risk
+  - Medium Risk
+  - High Risk
+  - Very High Risk
+- Proposed a risk-based pricing framework recommending premium adjustments using actuarial risk factors and historical claims experience.
+- Built an interactive Power BI dashboard for portfolio monitoring and underwriting analysis.
 
+---
 
-## Future Enhancements
+# Power BI Dashboard Features
 
-- Generalized Linear Models (GLMs)
-- Automated pricing recommendations
-- Interactive Power BI dashboard
+The dashboard includes:
 
+- Portfolio KPIs
+- Claim Frequency Analysis
+- Claim Severity Analysis
+- Risk Category Analysis
+- Fraud Distribution
+- Current vs Recommended Premium Comparison
+- Interactive Slicers
+  - Age Group
+  - Risk Category
+  - Incident Severity
+  - Fraud Status
 
-## Sample Visualizations
+---
 
-### Claim Frequency by Age Group
+# Sample Visualizations
+
+## Claim Frequency by Age Group
 
 ![Claim Frequency by Age Group](images/Claim_frequency_by_age_group.JPG)
 
+---
 
-
-### Claim Amount by Incident Severity
+## Claim Amount by Incident Severity
 
 ![Claim Amount by Incident Severity](images/Claim_amount_by_incident_severity.JPG)
 
+---
 
-
-### Claim Amount by Fraud Status
+## Claim Amount by Fraud Status
 
 ![Claim Amount by Fraud Status](images/Claim_severity_by_Fraud_Status.JPG)
 
+---
 
-
-### Claim Amount by Risk Level
+## Claim Amount by Risk Category
 
 ![Claim Amount by Risk Level](images/Claim_amount_by_risk_level.JPG)
+
+---
+
+# Skills Demonstrated
+
+- Insurance Claims Analytics
+- Actuarial Pricing
+- Risk Segmentation
+- Claim Frequency Analysis
+- Claim Severity Analysis
+- Fraud Analysis
+- Data Visualization
+- Dashboard Development
+- Statistical Analysis in R
+- Power BI
+- Git & GitHub
+
+---
+
+
+# Author
+
+**Raghav Kedia**
+
+- Aspiring Actuary (IFOA)
+- B.Com (Hons), Ramjas College, University of Delhi
+- GitHub: https://github.com/raghavkedia2
