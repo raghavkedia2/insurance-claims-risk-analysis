@@ -17,7 +17,7 @@ The project combines **R**, **Excel**, and **Power BI** to support data-driven u
 
 ## Dashboard Preview
 
-![Power BI Dashboard](dashboard/Insurance%20Claims%20Dashboard.jpg)
+![Power BI Dashboard](dashboard/Insurance_Claim_Dashboard.JPG)
 
 ---
 
