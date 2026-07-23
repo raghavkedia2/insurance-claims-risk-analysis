@@ -1,11 +1,8 @@
-#Day 1
-
 > insurance_claims <- read_excel("C:/Users/user1/Desktop/All Folders/Actuarial Project/self made analysis project/insurance claims.xlsx")
 > summary(insurance_claims$total_claim_amount)
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     100   41813   58055   52762   70593  114920 
 
-#Day 2
 
 > insurance_claims$age_group = cut(
 +   insurance_claims$age,
@@ -108,8 +105,6 @@ Science: https://r4ds.hadley.nz/
 +   geom_boxplot()
 
 
-#Day 3
-
 > insurance_claims %>%
 +   group_by(incident_severity, fraud_reported) %>%
 +   summarise(
@@ -155,8 +150,6 @@ the `.groups` argument.
  9 55+       N                 55991.    43
 10 55+       Y                 65153.    21
 
-
-#Day 4
 
 > insurance_claims$risk_level <- ifelse(
 +   insurance_claims$incident_severity == "Major Damage" &
