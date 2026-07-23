@@ -1,4 +1,4 @@
-#Day 9
+
 
 > insurance_claims$risk_score <- 0
 > insurance_claims$risk_score <- insurance_claims$risk_score +
@@ -54,8 +54,6 @@
 4 Very High Risk    60975.    84
 5 Very Low Risk     30266.   281
 
-
-#Day 10
 
 > mean(insurance_claims$policy_annual_premium)
 [1] 1256.406
